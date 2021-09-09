@@ -46,6 +46,7 @@
       <style id="Item__Left" flex="1" flexDirection="row" />
       <style id="Item__Label" fontSize="18" fontWeight="normal" />
       <style id="Item__Chevron" fontSize="18" fontWeight="bold" />
+      <style id="Item__Reload" color="red" />
     </styles>
     <body style="Body" safe-area="true">
       <header style="Header">
@@ -53,6 +54,92 @@
       </header>
       <list>
         <item
+          href="#"
+          action="reload"
+          style="Item">
+          <view>
+            <text style="Item__Reload">Reload</text>
+          </view>
+        </item>  
+        <item
+          href="/angus.quail/index.xml"
+          key="layout"
+          show-during-load="loadingScreen"
+          style="Item"
+        >
+          <view style="Item__Left">
+            <text style="Item__Label">Angus</text>
+          </view>
+          <text style="Item__Chevron">&gt;</text>
+        </item>
+        <item
+          href="/rwu/index.xml"
+          key="layout"
+          show-during-load="loadingScreen"
+          style="Item"
+        >
+          <view style="Item__Left">
+            <text style="Item__Label">Rance</text>
+          </view>
+          <text style="Item__Chevron">&gt;</text>
+        </item>
+        <item
+          href="/mthorpe/index.xml"
+          key="layout"
+          show-during-load="loadingScreen"
+          style="Item"
+        >
+          <view style="Item__Left">
+            <text style="Item__Label">Murray</text>
+          </view>
+          <text style="Item__Chevron">&gt;</text>
+        </item>
+        <item
+          href="/schadwick/index.xml"
+          key="layout"
+          show-during-load="loadingScreen"
+          style="Item"
+        >
+          <view style="Item__Left">
+            <text style="Item__Label">Steph</text>
+          </view>
+          <text style="Item__Chevron">&gt;</text>
+        </item>
+        <item
+          href="/ctey/index.xml"
+          key="layout"
+          show-during-load="loadingScreen"
+          style="Item"
+        >
+          <view style="Item__Left">
+            <text style="Item__Label">Chui</text>
+          </view>
+          <text style="Item__Chevron">&gt;</text>
+        </item>
+        <item
+          href="/creynolds/index.xml"
+          key="layout"
+          show-during-load="loadingScreen"
+          style="Item"
+        >
+          <view style="Item__Left">
+            <text style="Item__Label">Callum</text>
+          </view>
+          <text style="Item__Chevron">&gt;</text>
+        </item>
+        <item
+          href="/ctaylor/index.xml"
+          key="layout"
+          show-during-load="loadingScreen"
+          style="Item"
+        >
+          <view style="Item__Left">
+            <text style="Item__Label">Caitlyn</text>
+          </view>
+          <text style="Item__Chevron">&gt;</text>
+        </item>
+
+        <!-- <item
           href="/ui_elements/index.xml"
           key="layout"
           show-during-load="loadingScreen"
@@ -113,7 +200,7 @@
             <text style="Item__Label">Case Studies</text>
           </view>
           <text style="Item__Chevron">&gt;</text>
-        </item>
+        </item> -->
       </list>
     </body>
   </screen>

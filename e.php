@@ -25,11 +25,7 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'ctey'        => '$2y$10$4PUMUsx3ClQsh3dJ8dAzw.m/UbUzQqDnauKqDtN7k41IewLs7MCkG',
-    'angus.quail' => '$2y$10$AoHPtY27lU57qmGKXvZ6tObyJ/gA8w5IGJ5.x9LnYsyYU7gRE0ajm',
-    'mthorpe'     => '$2y$10$R7OfhpNrCNnGG7fNBKRY7uo8rPUZR0MVTNmQ0BMSQ.tHZBJ6luBta',
-    'schadwick'   => '$2y$10$5TJWjpmGGx0NjhQD1IsW.efEM0zkaeEkDCPUI5D2oTnzz.mIFx0VO',
-    'rwu'         => '$2y$10$8AVgQo/5fcxj0YT7FGPeEepkscF4sShGdZgkxqu5GzDufbwLDDjt2'
+    'ctey'        => '============================================================',
  );
 
 // Readonly users
@@ -65,7 +61,14 @@ $http_host = $_SERVER['HTTP_HOST'];
 
 // user specific directories
 // array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
-$directories_users = array();
+$directories_users = array(
+    "creynolds"   => "$root_path/creynolds",
+    "schadwick"   => "$root_path/schadwick",
+    "ctaylor"     => "$root_path/ctaylor",
+    "mthorpe"     => "$root_path/mthorpe",
+    "angus.quail" => "$root_path/angus.quail",
+    "rwu"         => "$root_path/rwu",
+);
 
 // input encoding for iconv
 $iconv_input_encoding = 'UTF-8';
