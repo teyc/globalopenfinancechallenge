@@ -55,3 +55,7 @@
       <style id="Container__Title" fontSize="24" />
       <style id="Button" padding="24" />
       <style id="Link" color="blue" borderBottomWidth="1" borderBottomColor="blue" />
+      <style id="TextInput"
+        fontSize="24"
+        margin="12"
+      />
