@@ -19,10 +19,10 @@
           applied to help mitigate the worst effects of gambling</text>
       </view>
       <view
-          href="#"
-          action="reload">
-          <text style="Button Item__Reload">Reload (dev mode)</text>
-        </view>
+        href="#"
+        action="reload">
+        <text style="Button Item__Reload">Reload (dev mode)</text>
+      </view>
     </body>
   </screen>
   <screen id="loadingScreen">
