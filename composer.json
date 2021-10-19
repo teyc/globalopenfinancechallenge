@@ -1,0 +1,7 @@
+{
+    "require": {
+        "httpsoft/http-message": "^1.0",
+        "php-http/curl-client": "^2.2",
+        "facile-it/php-openid-client": "^0.2.0"
+    }
+}
