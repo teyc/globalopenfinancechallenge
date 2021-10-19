@@ -30,8 +30,8 @@
             <image source="/assets/nabLogo.png" style="Image" />
             <text style="Container__Title">Faked</text>
             <text-field
+              name="accountNumber" value="54321"
               style="TextInput"
-              name="accountNumber"
               auto-focus="false"
               placeholder="account number"
               keyboard-type="number-pad" />
@@ -40,9 +40,7 @@
               name="password"
               placeholder="password"
               secure-text="true" />
-            <view action="reload" href="/open-banking-03.php">
-              <text style="Button Link">Login</text>
-            </view>
+            <text style="Button Link" target="login_container" action="reload" verb="post" href="/web/login.php">Login 1</text>
             <text style="Button Link" action="close">Cancel</text>
           </form>
     </body>
