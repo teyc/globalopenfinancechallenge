@@ -80,7 +80,9 @@ $data2 = $data  `
     [pscustomobject] $_ 
 }
 
+#--------------- Generate output -------------------------------
 @"
+# dynamic-rollforward.ps1 $(Get-Date)
 drrfConfiguration:
  drrfProvisionAheadDays: 1000
  varianceMap:
@@ -118,6 +120,8 @@ $data2 `
     $_.Group `
     | ForEach-Object {
         $amount = ($_.Max + $_.Min)/2.0
+        $startdate = (get-date '2020-01-01T08:13:27+10:00')
+        $nextdate = $startdate.AddDays($_.Days)
 @"
     - other: '$($_.AccountNumber)'
       otherScheme: 'BBAN'
@@ -127,12 +131,17 @@ $data2 `
       startBalance: 5252.570246
       transactions:
           - amount: $amount
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: '$($_.Merchant)'
             merchantCategoryCode: '$($_.MCC)'
             remittanceCat: '$($_.Type)'
-            fromAccount: '$($_.AccountNumber)'
+          - amount: $amount
+            bookingDate: '$(Get-Date $nextDate -Format "yyyy-MM-ddTHH:mm:ss+10:00")'
+            cdtDbtInd: DBIT
+            counterparty: '$($_.Merchant)'
+            merchantCategoryCode: '$($_.MCC)'
+            remittanceCat: '$($_.Type)'
 "@
     }
 }

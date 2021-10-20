@@ -1,3 +1,4 @@
+# dynamic-rollforward.ps1 10/20/2021 15:05:52
 drrfConfiguration:
  drrfProvisionAheadDays: 1000
  varianceMap:
@@ -201,12 +202,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 55
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Coles'
             merchantCategoryCode: '5411'
             remittanceCat: 'Grocery1'
-            fromAccount: '1857193'
+          - amount: 55
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Coles'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery1'
     - other: '1857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -215,12 +221,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 80
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Caltex'
             merchantCategoryCode: '5541'
             remittanceCat: 'Fuel1'
-            fromAccount: '1857193'
+          - amount: 80
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Caltex'
+            merchantCategoryCode: '5541'
+            remittanceCat: 'Fuel1'
     - other: '1857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -229,12 +240,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 1400
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'NAB'
             merchantCategoryCode: '0'
             remittanceCat: 'Mortgage1'
-            fromAccount: '1857193'
+          - amount: 1400
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'NAB'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Mortgage1'
     - other: '1857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -243,12 +259,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 525
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Urban Utilities'
             merchantCategoryCode: '4900'
             remittanceCat: 'Utilities1'
-            fromAccount: '1857193'
+          - amount: 525
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Urban Utilities'
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Utilities1'
     - other: '1857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -257,12 +278,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 28
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Netflix'
             merchantCategoryCode: '7841'
             remittanceCat: 'Subscriptions1'
-            fromAccount: '1857193'
+          - amount: 28
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Netflix'
+            merchantCategoryCode: '7841'
+            remittanceCat: 'Subscriptions1'
     - other: '1857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -271,12 +297,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 28
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Amazon Prime'
             merchantCategoryCode: '7841'
             remittanceCat: 'Subscriptions1'
-            fromAccount: '1857193'
+          - amount: 28
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Amazon Prime'
+            merchantCategoryCode: '7841'
+            remittanceCat: 'Subscriptions1'
     - other: '1857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -285,12 +316,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 100
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'GP Clinic'
             merchantCategoryCode: '8099'
             remittanceCat: 'Medical1'
-            fromAccount: '1857193'
+          - amount: 100
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'GP Clinic'
+            merchantCategoryCode: '8099'
+            remittanceCat: 'Medical1'
     - other: '1857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -299,12 +335,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -5400
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Payroll'
             merchantCategoryCode: '0'
             remittanceCat: 'Income1'
-            fromAccount: '1857193'
+          - amount: -5400
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income1'
     - other: '1857751'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -313,12 +354,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 70
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Ladbrokes'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling1a'
-            fromAccount: '1857751'
+          - amount: 70
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling1a'
     - other: '1857751'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -327,12 +373,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 70
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Bet365'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling1d'
-            fromAccount: '1857751'
+          - amount: 70
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Bet365'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling1d'
     - other: '1857751'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -341,12 +392,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 115
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Sportsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling1b'
-            fromAccount: '1857751'
+          - amount: 115
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling1b'
     - other: '1857751'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -355,12 +411,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -750
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Ladbrokes'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling1c'
-            fromAccount: '1857751'
+          - amount: -750
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling1c'
   - username: 'sclause'
     firstName: 'Santa'
     lastName: 'Clause'
@@ -374,12 +435,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 120
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Coles'
             merchantCategoryCode: '5411'
             remittanceCat: 'Grocery2'
-            fromAccount: '2875043'
+          - amount: 120
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Coles'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery2'
     - other: '2875568'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -388,12 +454,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 80
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Caltex'
             merchantCategoryCode: '5541'
             remittanceCat: 'Fuel2'
-            fromAccount: '2875568'
+          - amount: 80
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Caltex'
+            merchantCategoryCode: '5541'
+            remittanceCat: 'Fuel2'
     - other: '2875043'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -402,12 +473,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 375
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Mazda'
             merchantCategoryCode: '5511'
             remittanceCat: 'Car2'
-            fromAccount: '2875043'
+          - amount: 375
+            bookingDate: '2020-06-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Mazda'
+            merchantCategoryCode: '5511'
+            remittanceCat: 'Car2'
     - other: '2875043'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -416,12 +492,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 560
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: ''
             merchantCategoryCode: '0'
             remittanceCat: 'BodyCorp2'
-            fromAccount: '2875043'
+          - amount: 560
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: ''
+            merchantCategoryCode: '0'
+            remittanceCat: 'BodyCorp2'
     - other: '2875568'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -430,12 +511,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 1400
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'NAB'
             merchantCategoryCode: '0'
             remittanceCat: 'Mortgage2'
-            fromAccount: '2875568'
+          - amount: 1400
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'NAB'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Mortgage2'
     - other: '2875043'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -444,12 +530,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 300
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Energex'
             merchantCategoryCode: '4900'
             remittanceCat: 'Electricity2 '
-            fromAccount: '2875043'
+          - amount: 300
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Energex'
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Electricity2 '
     - other: '2875568'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -458,12 +549,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 250
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Urban Utilities'
             merchantCategoryCode: '4900'
             remittanceCat: 'Utilities2'
-            fromAccount: '2875568'
+          - amount: 250
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Urban Utilities'
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Utilities2'
     - other: '2875568'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -472,12 +568,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 100
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'S&N'
             merchantCategoryCode: '8099'
             remittanceCat: 'Medical2'
-            fromAccount: '2875568'
+          - amount: 100
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'S&N'
+            merchantCategoryCode: '8099'
+            remittanceCat: 'Medical2'
     - other: '2875043'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -486,12 +587,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -5500
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Payroll'
             merchantCategoryCode: '0'
             remittanceCat: 'Income2'
-            fromAccount: '2875043'
+          - amount: -5500
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income2'
     - other: '2875568'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -500,12 +606,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 100
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Jetts'
             merchantCategoryCode: '7032'
             remittanceCat: 'Fitness2'
-            fromAccount: '2875568'
+          - amount: 100
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Jetts'
+            merchantCategoryCode: '7032'
+            remittanceCat: 'Fitness2'
     - other: '2875568'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -514,12 +625,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 350
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Flight Centre'
             merchantCategoryCode: '3756'
             remittanceCat: 'Holiday2'
-            fromAccount: '2875568'
+          - amount: 350
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Flight Centre'
+            merchantCategoryCode: '3756'
+            remittanceCat: 'Holiday2'
     - other: '2875043'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -528,12 +644,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 125
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'ATM'
             merchantCategoryCode: '0'
             remittanceCat: 'CashOut2'
-            fromAccount: '2875043'
+          - amount: 125
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'ATM'
+            merchantCategoryCode: '0'
+            remittanceCat: 'CashOut2'
     - other: '2875568'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -542,12 +663,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 15
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Netflix'
             merchantCategoryCode: '7841'
             remittanceCat: 'Streaming2'
-            fromAccount: '2875568'
+          - amount: 15
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Netflix'
+            merchantCategoryCode: '7841'
+            remittanceCat: 'Streaming2'
     - other: '2875043'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -556,12 +682,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 15
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Sportsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling2a'
-            fromAccount: '2875043'
+          - amount: 15
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling2a'
     - other: '2875043'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -570,12 +701,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 200
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Neds'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling2b'
-            fromAccount: '2875043'
+          - amount: 200
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Neds'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling2b'
     - other: '2875043'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -584,12 +720,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -75
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Neds'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling2c'
-            fromAccount: '2875043'
+          - amount: -75
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Neds'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling2c'
   - username: 'tsmith'
     firstName: 'Tim'
     lastName: 'Smith'
@@ -603,12 +744,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 50
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Translink'
             merchantCategoryCode: '3756'
             remittanceCat: 'Bus3'
-            fromAccount: '3857193'
+          - amount: 50
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Translink'
+            merchantCategoryCode: '3756'
+            remittanceCat: 'Bus3'
     - other: '3857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -617,12 +763,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 300
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Rentals Brisbane'
             merchantCategoryCode: '0'
             remittanceCat: 'Rent3'
-            fromAccount: '3857193'
+          - amount: 300
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Rentals Brisbane'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Rent3'
     - other: '3857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -631,12 +782,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 105
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Energex'
             merchantCategoryCode: '4900'
             remittanceCat: 'Utilities3'
-            fromAccount: '3857193'
+          - amount: 105
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Energex'
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Utilities3'
     - other: '3857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -645,12 +801,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 45
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Brisbane GPs'
             merchantCategoryCode: '8099'
             remittanceCat: 'Medical3'
-            fromAccount: '3857193'
+          - amount: 45
+            bookingDate: '2020-06-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Brisbane GPs'
+            merchantCategoryCode: '8099'
+            remittanceCat: 'Medical3'
     - other: '3857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -659,12 +820,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -660
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Centerlink'
             merchantCategoryCode: '0'
             remittanceCat: 'Income3'
-            fromAccount: '3857193'
+          - amount: -660
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Centerlink'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income3'
     - other: '3857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -673,12 +839,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 12.5
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Ladbrokes'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling3a'
-            fromAccount: '3857193'
+          - amount: 12.5
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling3a'
     - other: '3857193'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -687,12 +858,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -60
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Ladbrokes'
             merchantCategoryCode: '0'
             remittanceCat: 'Gambling3b'
-            fromAccount: '3857193'
+          - amount: -60
+            bookingDate: '2020-05-20T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ladbrokes'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Gambling3b'
   - username: 'dduck'
     firstName: 'Dolly'
     lastName: 'Duck'
@@ -706,12 +882,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 27.5
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Woolworths'
             merchantCategoryCode: '5411'
             remittanceCat: 'Grocery4'
-            fromAccount: '4149234'
+          - amount: 27.5
+            bookingDate: '2020-01-06T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Woolworths'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery4'
     - other: '4149234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -720,12 +901,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 200
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: ''
             merchantCategoryCode: '0'
             remittanceCat: 'Rent4'
-            fromAccount: '4149234'
+          - amount: 200
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: ''
+            merchantCategoryCode: '0'
+            remittanceCat: 'Rent4'
     - other: '4149234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -734,12 +920,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -350
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Payroll'
             merchantCategoryCode: '0'
             remittanceCat: 'Income4'
-            fromAccount: '4149234'
+          - amount: -350
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income4'
     - other: '4149234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -748,12 +939,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 7.5
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Pointsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling4a'
-            fromAccount: '4149234'
+          - amount: 7.5
+            bookingDate: '2020-01-04T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling4a'
     - other: '4149234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -762,12 +958,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 20
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Sportsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling4b'
-            fromAccount: '4149234'
+          - amount: 20
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling4b'
     - other: '4149234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -776,12 +977,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -15
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Pointsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling4d'
-            fromAccount: '4149234'
+          - amount: -15
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling4d'
     - other: '4149234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -790,12 +996,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -37.5
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Sportsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling4c'
-            fromAccount: '4149234'
+          - amount: -37.5
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling4c'
     - other: '4149234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -804,12 +1015,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 39
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Anytime Fitness'
             merchantCategoryCode: '7032'
             remittanceCat: 'Fitness4'
-            fromAccount: '4149234'
+          - amount: 39
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Anytime Fitness'
+            merchantCategoryCode: '7032'
+            remittanceCat: 'Fitness4'
     - other: '4149234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -818,12 +1034,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 32.5
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Pig & Whistle'
             merchantCategoryCode: '5813'
             remittanceCat: 'Alcohol4'
-            fromAccount: '4149234'
+          - amount: 32.5
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Pig & Whistle'
+            merchantCategoryCode: '5813'
+            remittanceCat: 'Alcohol4'
   - username: 'eelephant'
     firstName: 'Elvis'
     lastName: 'Elephant'
@@ -837,12 +1058,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 65
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'ALDI'
             merchantCategoryCode: '5411'
             remittanceCat: 'Grocery5'
-            fromAccount: '5551234'
+          - amount: 65
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'ALDI'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery5'
     - other: '5551234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -851,12 +1077,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 45
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'United'
             merchantCategoryCode: '5541'
             remittanceCat: 'Fuel5'
-            fromAccount: '5551234'
+          - amount: 45
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'United'
+            merchantCategoryCode: '5541'
+            remittanceCat: 'Fuel5'
     - other: '5551234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -865,12 +1096,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 1600
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'NAB'
             merchantCategoryCode: '0'
             remittanceCat: 'Rent5'
-            fromAccount: '5551234'
+          - amount: 1600
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'NAB'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Rent5'
     - other: '5551234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -879,12 +1115,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -4000
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Payroll'
             merchantCategoryCode: '0'
             remittanceCat: 'Income5'
-            fromAccount: '5551234'
+          - amount: -4000
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income5'
     - other: '5551234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -893,12 +1134,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 75
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Sportsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling5a'
-            fromAccount: '5551234'
+          - amount: 75
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling5a'
     - other: '5551234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -907,12 +1153,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 30
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Sportsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling5b'
-            fromAccount: '5551234'
+          - amount: 30
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling5b'
     - other: '5551234'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -921,12 +1172,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -150
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Sportsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling5c'
-            fromAccount: '5551234'
+          - amount: -150
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling5c'
   - username: 'pstar'
     firstName: 'Patrick'
     lastName: 'Star'
@@ -940,12 +1196,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 550
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'ALDI'
             merchantCategoryCode: '5411'
             remittanceCat: 'Grocery6'
-            fromAccount: '6276241'
+          - amount: 550
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'ALDI'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery6'
     - other: '6276241'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -954,12 +1215,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 60
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: '7Eleven '
             merchantCategoryCode: '5541'
             remittanceCat: 'Fuel6'
-            fromAccount: '6276241'
+          - amount: 60
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: '7Eleven '
+            merchantCategoryCode: '5541'
+            remittanceCat: 'Fuel6'
     - other: '6276247'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -968,12 +1234,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 1950
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'NAB'
             merchantCategoryCode: '0'
             remittanceCat: 'Mortgage6'
-            fromAccount: '6276247'
+          - amount: 1950
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'NAB'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Mortgage6'
     - other: '6276247'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -982,12 +1253,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 275
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Netflix, Spotify'
             merchantCategoryCode: '7841'
             remittanceCat: 'Entertainment'
-            fromAccount: '6276247'
+          - amount: 275
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Netflix, Spotify'
+            merchantCategoryCode: '7841'
+            remittanceCat: 'Entertainment'
     - other: '6276241'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -996,12 +1272,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 295
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Ovo, Urban Utilise, Council '
             merchantCategoryCode: '4900'
             remittanceCat: 'Utilities6'
-            fromAccount: '6276241'
+          - amount: 295
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ovo, Urban Utilise, Council '
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Utilities6'
     - other: '6276241'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -1010,12 +1291,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 1200
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Body Corp'
             merchantCategoryCode: '0'
             remittanceCat: 'Rates6'
-            fromAccount: '6276241'
+          - amount: 1200
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Body Corp'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Rates6'
     - other: '6276241'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -1024,12 +1310,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 95
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Frank'
             merchantCategoryCode: '8099'
             remittanceCat: 'Medical6'
-            fromAccount: '6276241'
+          - amount: 95
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Frank'
+            merchantCategoryCode: '8099'
+            remittanceCat: 'Medical6'
     - other: '6276241'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -1038,12 +1329,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: -6200
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Payroll'
             merchantCategoryCode: '0'
             remittanceCat: 'Income6'
-            fromAccount: '6276241'
+          - amount: -6200
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income6'
     - other: '6276241'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -1052,12 +1348,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 55
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Sportsbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling6a'
-            fromAccount: '6276241'
+          - amount: 55
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling6a'
     - other: '6276241'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -1066,12 +1367,17 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 55
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Colossalbet'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling6b'
-            fromAccount: '6276241'
+          - amount: 55
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Colossalbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling6b'
     - other: '6276241'
       otherScheme: 'BBAN'
       countryCode: 'AU'
@@ -1080,9 +1386,14 @@ users:
       startBalance: 5252.570246
       transactions:
           - amount: 55
-            bookingDate: '2020-01-01T08:13:27+01:00'
+            bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
             counterparty: 'Neds'
             merchantCategoryCode: '7995'
             remittanceCat: 'Gambling6c'
-            fromAccount: '6276241'
+          - amount: 55
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Neds'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling6c'
