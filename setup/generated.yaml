@@ -1,0 +1,1088 @@
+drrfConfiguration:
+ drrfProvisionAheadDays: 1000
+ varianceMap:
+   Grocery1:
+    stdDevAmnt: 50
+    stdDevDate: 7
+   Fuel1:
+    stdDevAmnt: 40
+    stdDevDate: 14
+   Mortgage1:
+    stdDevAmnt: 0
+    stdDevDate: 28
+   Utilities1:
+    stdDevAmnt: 250
+    stdDevDate: 90
+   Subscriptions1:
+    stdDevAmnt: 0
+    stdDevDate: 28
+   Subscriptions1:
+    stdDevAmnt: 0
+    stdDevDate: 28
+   Medical1:
+    stdDevAmnt: 40
+    stdDevDate: 90
+   Income1:
+    stdDevAmnt: 0
+    stdDevDate: 30
+   Gambling1a:
+    stdDevAmnt: 60
+    stdDevDate: 7
+   Gambling1d:
+    stdDevAmnt: 60
+    stdDevDate: 7
+   Gambling1b:
+    stdDevAmnt: 70
+    stdDevDate: 7
+   Gambling1c:
+    stdDevAmnt: -500
+    stdDevDate: 90
+   Grocery2:
+    stdDevAmnt: 0
+    stdDevDate: 7
+   Fuel2:
+    stdDevAmnt: 0
+    stdDevDate: 14
+   Car2:
+    stdDevAmnt: 50
+    stdDevDate: 180
+   BodyCorp2:
+    stdDevAmnt: 0
+    stdDevDate: 90
+   Mortgage2:
+    stdDevAmnt: 0
+    stdDevDate: 30
+   Electricity2 :
+    stdDevAmnt: 0
+    stdDevDate: 90
+   Utilities2:
+    stdDevAmnt: 0
+    stdDevDate: 90
+   Medical2:
+    stdDevAmnt: 0
+    stdDevDate: 30
+   Income2:
+    stdDevAmnt: 0
+    stdDevDate: 30
+   Fitness2:
+    stdDevAmnt: 0
+    stdDevDate: 7
+   Holiday2:
+    stdDevAmnt: 300
+    stdDevDate: 90
+   CashOut2:
+    stdDevAmnt: 50
+    stdDevDate: 14
+   Streaming2:
+    stdDevAmnt: 0
+    stdDevDate: 30
+   Gambling2a:
+    stdDevAmnt: 10
+    stdDevDate: 7
+   Gambling2b:
+    stdDevAmnt: 0
+    stdDevDate: 30
+   Gambling2c:
+    stdDevAmnt: -50
+    stdDevDate: 30
+   Bus3:
+    stdDevAmnt: 0
+    stdDevDate: 7
+   Rent3:
+    stdDevAmnt: 0
+    stdDevDate: 14
+   Utilities3:
+    stdDevAmnt: 30
+    stdDevDate: 90
+   Medical3:
+    stdDevAmnt: 10
+    stdDevDate: 180
+   Income3:
+    stdDevAmnt: 0
+    stdDevDate: 14
+   Gambling3a:
+    stdDevAmnt: 5
+    stdDevDate: 14
+   Gambling3b:
+    stdDevAmnt: -120
+    stdDevDate: 140
+   Grocery4:
+    stdDevAmnt: 5
+    stdDevDate: 5
+   Rent4:
+    stdDevAmnt: 0
+    stdDevDate: 14
+   Income4:
+    stdDevAmnt: -100
+    stdDevDate: 7
+   Gambling4a:
+    stdDevAmnt: 5
+    stdDevDate: 3
+   Gambling4b:
+    stdDevAmnt: 10
+    stdDevDate: 7
+   Gambling4d:
+    stdDevAmnt: -30
+    stdDevDate: 30
+   Gambling4c:
+    stdDevAmnt: -75
+    stdDevDate: 30
+   Fitness4:
+    stdDevAmnt: 0
+    stdDevDate: 14
+   Alcohol4:
+    stdDevAmnt: 13
+    stdDevDate: 7
+   Grocery5:
+    stdDevAmnt: 70
+    stdDevDate: 7
+   Fuel5:
+    stdDevAmnt: 30
+    stdDevDate: 14
+   Rent5:
+    stdDevAmnt: 0
+    stdDevDate: 28
+   Income5:
+    stdDevAmnt: 0
+    stdDevDate: 30
+   Gambling5a:
+    stdDevAmnt: 50
+    stdDevDate: 7
+   Gambling5b:
+    stdDevAmnt: 40
+    stdDevDate: 7
+   Gambling5c:
+    stdDevAmnt: -100
+    stdDevDate: 90
+   Grocery6:
+    stdDevAmnt: 100
+    stdDevDate: 30
+   Fuel6:
+    stdDevAmnt: 40
+    stdDevDate: 30
+   Mortgage6:
+    stdDevAmnt: 900
+    stdDevDate: 30
+   Entertainment:
+    stdDevAmnt: 450
+    stdDevDate: 30
+   Utilities6:
+    stdDevAmnt: 110
+    stdDevDate: 30
+   Rates6:
+    stdDevAmnt: 0
+    stdDevDate: 90
+   Medical6:
+    stdDevAmnt: 6
+    stdDevDate: 30
+   Income6:
+    stdDevAmnt: 0
+    stdDevDate: 30
+   Gambling6a:
+    stdDevAmnt: 90
+    stdDevDate: 7
+   Gambling6b:
+    stdDevAmnt: 90
+    stdDevDate: 7
+   Gambling6c:
+    stdDevAmnt: 90
+    stdDevDate: 7
+users:
+  - username: 'sghun'
+    firstName: 'Seong'
+    lastName: 'Gi-Hun'
+    password: 'secret'
+    accounts:
+    - other: '1857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 55
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Coles'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery1'
+            fromAccount: '1857193'
+    - other: '1857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 80
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Caltex'
+            merchantCategoryCode: '5541'
+            remittanceCat: 'Fuel1'
+            fromAccount: '1857193'
+    - other: '1857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 1400
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'NAB'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Mortgage1'
+            fromAccount: '1857193'
+    - other: '1857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 525
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Urban Utilities'
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Utilities1'
+            fromAccount: '1857193'
+    - other: '1857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 28
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Netflix'
+            merchantCategoryCode: '7841'
+            remittanceCat: 'Subscriptions1'
+            fromAccount: '1857193'
+    - other: '1857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 28
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Amazon Prime'
+            merchantCategoryCode: '7841'
+            remittanceCat: 'Subscriptions1'
+            fromAccount: '1857193'
+    - other: '1857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 100
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'GP Clinic'
+            merchantCategoryCode: '8099'
+            remittanceCat: 'Medical1'
+            fromAccount: '1857193'
+    - other: '1857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -5400
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income1'
+            fromAccount: '1857193'
+    - other: '1857751'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 70
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling1a'
+            fromAccount: '1857751'
+    - other: '1857751'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 70
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Bet365'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling1d'
+            fromAccount: '1857751'
+    - other: '1857751'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 115
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling1b'
+            fromAccount: '1857751'
+    - other: '1857751'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -750
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling1c'
+            fromAccount: '1857751'
+  - username: 'sclause'
+    firstName: 'Santa'
+    lastName: 'Clause'
+    password: 'secret'
+    accounts:
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 120
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Coles'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery2'
+            fromAccount: '2875043'
+    - other: '2875568'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 80
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Caltex'
+            merchantCategoryCode: '5541'
+            remittanceCat: 'Fuel2'
+            fromAccount: '2875568'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 375
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Mazda'
+            merchantCategoryCode: '5511'
+            remittanceCat: 'Car2'
+            fromAccount: '2875043'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 560
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: ''
+            merchantCategoryCode: '0'
+            remittanceCat: 'BodyCorp2'
+            fromAccount: '2875043'
+    - other: '2875568'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 1400
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'NAB'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Mortgage2'
+            fromAccount: '2875568'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 300
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Energex'
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Electricity2 '
+            fromAccount: '2875043'
+    - other: '2875568'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 250
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Urban Utilities'
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Utilities2'
+            fromAccount: '2875568'
+    - other: '2875568'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 100
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'S&N'
+            merchantCategoryCode: '8099'
+            remittanceCat: 'Medical2'
+            fromAccount: '2875568'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -5500
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income2'
+            fromAccount: '2875043'
+    - other: '2875568'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 100
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Jetts'
+            merchantCategoryCode: '7032'
+            remittanceCat: 'Fitness2'
+            fromAccount: '2875568'
+    - other: '2875568'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 350
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Flight Centre'
+            merchantCategoryCode: '3756'
+            remittanceCat: 'Holiday2'
+            fromAccount: '2875568'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 125
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'ATM'
+            merchantCategoryCode: '0'
+            remittanceCat: 'CashOut2'
+            fromAccount: '2875043'
+    - other: '2875568'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 15
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Netflix'
+            merchantCategoryCode: '7841'
+            remittanceCat: 'Streaming2'
+            fromAccount: '2875568'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 15
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling2a'
+            fromAccount: '2875043'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 200
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Neds'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling2b'
+            fromAccount: '2875043'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -75
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Neds'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling2c'
+            fromAccount: '2875043'
+  - username: 'tsmith'
+    firstName: 'Tim'
+    lastName: 'Smith'
+    password: 'secret'
+    accounts:
+    - other: '3857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 50
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Translink'
+            merchantCategoryCode: '3756'
+            remittanceCat: 'Bus3'
+            fromAccount: '3857193'
+    - other: '3857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 300
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Rentals Brisbane'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Rent3'
+            fromAccount: '3857193'
+    - other: '3857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 105
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Energex'
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Utilities3'
+            fromAccount: '3857193'
+    - other: '3857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 45
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Brisbane GPs'
+            merchantCategoryCode: '8099'
+            remittanceCat: 'Medical3'
+            fromAccount: '3857193'
+    - other: '3857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -660
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Centerlink'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income3'
+            fromAccount: '3857193'
+    - other: '3857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 12.5
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling3a'
+            fromAccount: '3857193'
+    - other: '3857193'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -60
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ladbrokes'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Gambling3b'
+            fromAccount: '3857193'
+  - username: 'dduck'
+    firstName: 'Dolly'
+    lastName: 'Duck'
+    password: 'secret'
+    accounts:
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 27.5
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Woolworths'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery4'
+            fromAccount: '4149234'
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 200
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: ''
+            merchantCategoryCode: '0'
+            remittanceCat: 'Rent4'
+            fromAccount: '4149234'
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -350
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income4'
+            fromAccount: '4149234'
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 7.5
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling4a'
+            fromAccount: '4149234'
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 20
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling4b'
+            fromAccount: '4149234'
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -15
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling4d'
+            fromAccount: '4149234'
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -37.5
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling4c'
+            fromAccount: '4149234'
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 39
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Anytime Fitness'
+            merchantCategoryCode: '7032'
+            remittanceCat: 'Fitness4'
+            fromAccount: '4149234'
+    - other: '4149234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 32.5
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Pig & Whistle'
+            merchantCategoryCode: '5813'
+            remittanceCat: 'Alcohol4'
+            fromAccount: '4149234'
+  - username: 'eelephant'
+    firstName: 'Elvis'
+    lastName: 'Elephant'
+    password: 'secret'
+    accounts:
+    - other: '5551234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 65
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'ALDI'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery5'
+            fromAccount: '5551234'
+    - other: '5551234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 45
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'United'
+            merchantCategoryCode: '5541'
+            remittanceCat: 'Fuel5'
+            fromAccount: '5551234'
+    - other: '5551234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 1600
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'NAB'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Rent5'
+            fromAccount: '5551234'
+    - other: '5551234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -4000
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income5'
+            fromAccount: '5551234'
+    - other: '5551234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 75
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling5a'
+            fromAccount: '5551234'
+    - other: '5551234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 30
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling5b'
+            fromAccount: '5551234'
+    - other: '5551234'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -150
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling5c'
+            fromAccount: '5551234'
+  - username: 'pstar'
+    firstName: 'Patrick'
+    lastName: 'Star'
+    password: 'secret'
+    accounts:
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 550
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'ALDI'
+            merchantCategoryCode: '5411'
+            remittanceCat: 'Grocery6'
+            fromAccount: '6276241'
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 60
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: '7Eleven '
+            merchantCategoryCode: '5541'
+            remittanceCat: 'Fuel6'
+            fromAccount: '6276241'
+    - other: '6276247'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 1950
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'NAB'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Mortgage6'
+            fromAccount: '6276247'
+    - other: '6276247'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 275
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Netflix, Spotify'
+            merchantCategoryCode: '7841'
+            remittanceCat: 'Entertainment'
+            fromAccount: '6276247'
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 295
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Ovo, Urban Utilise, Council '
+            merchantCategoryCode: '4900'
+            remittanceCat: 'Utilities6'
+            fromAccount: '6276241'
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 1200
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Body Corp'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Rates6'
+            fromAccount: '6276241'
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 95
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Frank'
+            merchantCategoryCode: '8099'
+            remittanceCat: 'Medical6'
+            fromAccount: '6276241'
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: -6200
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Payroll'
+            merchantCategoryCode: '0'
+            remittanceCat: 'Income6'
+            fromAccount: '6276241'
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 55
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling6a'
+            fromAccount: '6276241'
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 55
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Colossalbet'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling6b'
+            fromAccount: '6276241'
+    - other: '6276241'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 55
+            bookingDate: '2020-01-01T08:13:27+01:00'
+            cdtDbtInd: DBIT
+            counterparty: 'Neds'
+            merchantCategoryCode: '7995'
+            remittanceCat: 'Gambling6c'
+            fromAccount: '6276241'
