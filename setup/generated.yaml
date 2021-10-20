@@ -1,193 +1,193 @@
-# dynamic-rollforward.ps1 10/20/2021 15:05:52
+# dynamic-rollforward.ps1 10/20/2021 15:22:13
 drrfConfiguration:
  drrfProvisionAheadDays: 1000
  varianceMap:
    Grocery1:
     stdDevAmnt: 50
-    stdDevDate: 7
+    stdDevDate: 1
    Fuel1:
     stdDevAmnt: 40
-    stdDevDate: 14
+    stdDevDate: 1
    Mortgage1:
     stdDevAmnt: 0
-    stdDevDate: 28
+    stdDevDate: 1
    Utilities1:
     stdDevAmnt: 250
-    stdDevDate: 90
+    stdDevDate: 1
    Subscriptions1:
     stdDevAmnt: 0
-    stdDevDate: 28
+    stdDevDate: 1
    Subscriptions1:
     stdDevAmnt: 0
-    stdDevDate: 28
+    stdDevDate: 1
    Medical1:
     stdDevAmnt: 40
-    stdDevDate: 90
+    stdDevDate: 1
    Income1:
     stdDevAmnt: 0
-    stdDevDate: 30
+    stdDevDate: 1
    Gambling1a:
     stdDevAmnt: 60
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling1d:
     stdDevAmnt: 60
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling1b:
     stdDevAmnt: 70
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling1c:
     stdDevAmnt: -500
-    stdDevDate: 90
+    stdDevDate: 1
    Grocery2:
     stdDevAmnt: 0
-    stdDevDate: 7
+    stdDevDate: 1
    Fuel2:
     stdDevAmnt: 0
-    stdDevDate: 14
+    stdDevDate: 1
    Car2:
     stdDevAmnt: 50
-    stdDevDate: 180
+    stdDevDate: 1
    BodyCorp2:
     stdDevAmnt: 0
-    stdDevDate: 90
+    stdDevDate: 1
    Mortgage2:
     stdDevAmnt: 0
-    stdDevDate: 30
+    stdDevDate: 1
    Electricity2 :
     stdDevAmnt: 0
-    stdDevDate: 90
+    stdDevDate: 1
    Utilities2:
     stdDevAmnt: 0
-    stdDevDate: 90
+    stdDevDate: 1
    Medical2:
     stdDevAmnt: 0
-    stdDevDate: 30
+    stdDevDate: 1
    Income2:
     stdDevAmnt: 0
-    stdDevDate: 30
+    stdDevDate: 1
    Fitness2:
     stdDevAmnt: 0
-    stdDevDate: 7
+    stdDevDate: 1
    Holiday2:
     stdDevAmnt: 300
-    stdDevDate: 90
+    stdDevDate: 1
    CashOut2:
     stdDevAmnt: 50
-    stdDevDate: 14
+    stdDevDate: 1
    Streaming2:
     stdDevAmnt: 0
-    stdDevDate: 30
+    stdDevDate: 1
    Gambling2a:
     stdDevAmnt: 10
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling2b:
     stdDevAmnt: 0
-    stdDevDate: 30
+    stdDevDate: 1
    Gambling2c:
     stdDevAmnt: -50
-    stdDevDate: 30
+    stdDevDate: 1
    Bus3:
     stdDevAmnt: 0
-    stdDevDate: 7
+    stdDevDate: 1
    Rent3:
     stdDevAmnt: 0
-    stdDevDate: 14
+    stdDevDate: 1
    Utilities3:
     stdDevAmnt: 30
-    stdDevDate: 90
+    stdDevDate: 1
    Medical3:
     stdDevAmnt: 10
-    stdDevDate: 180
+    stdDevDate: 1
    Income3:
     stdDevAmnt: 0
-    stdDevDate: 14
+    stdDevDate: 1
    Gambling3a:
     stdDevAmnt: 5
-    stdDevDate: 14
+    stdDevDate: 1
    Gambling3b:
     stdDevAmnt: -120
-    stdDevDate: 140
+    stdDevDate: 1
    Grocery4:
     stdDevAmnt: 5
-    stdDevDate: 5
+    stdDevDate: 1
    Rent4:
     stdDevAmnt: 0
-    stdDevDate: 14
+    stdDevDate: 1
    Income4:
     stdDevAmnt: -100
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling4a:
     stdDevAmnt: 5
-    stdDevDate: 3
+    stdDevDate: 1
    Gambling4b:
     stdDevAmnt: 10
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling4d:
     stdDevAmnt: -30
-    stdDevDate: 30
+    stdDevDate: 1
    Gambling4c:
     stdDevAmnt: -75
-    stdDevDate: 30
+    stdDevDate: 1
    Fitness4:
     stdDevAmnt: 0
-    stdDevDate: 14
+    stdDevDate: 1
    Alcohol4:
     stdDevAmnt: 13
-    stdDevDate: 7
+    stdDevDate: 1
    Grocery5:
     stdDevAmnt: 70
-    stdDevDate: 7
+    stdDevDate: 1
    Fuel5:
     stdDevAmnt: 30
-    stdDevDate: 14
+    stdDevDate: 1
    Rent5:
     stdDevAmnt: 0
-    stdDevDate: 28
+    stdDevDate: 1
    Income5:
     stdDevAmnt: 0
-    stdDevDate: 30
+    stdDevDate: 1
    Gambling5a:
     stdDevAmnt: 50
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling5b:
     stdDevAmnt: 40
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling5c:
     stdDevAmnt: -100
-    stdDevDate: 90
+    stdDevDate: 1
    Grocery6:
     stdDevAmnt: 100
-    stdDevDate: 30
+    stdDevDate: 1
    Fuel6:
     stdDevAmnt: 40
-    stdDevDate: 30
+    stdDevDate: 1
    Mortgage6:
     stdDevAmnt: 900
-    stdDevDate: 30
+    stdDevDate: 1
    Entertainment:
     stdDevAmnt: 450
-    stdDevDate: 30
+    stdDevDate: 1
    Utilities6:
     stdDevAmnt: 110
-    stdDevDate: 30
+    stdDevDate: 1
    Rates6:
     stdDevAmnt: 0
-    stdDevDate: 90
+    stdDevDate: 1
    Medical6:
     stdDevAmnt: 6
-    stdDevDate: 30
+    stdDevDate: 1
    Income6:
     stdDevAmnt: 0
-    stdDevDate: 30
+    stdDevDate: 1
    Gambling6a:
     stdDevAmnt: 90
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling6b:
     stdDevAmnt: 90
-    stdDevDate: 7
+    stdDevDate: 1
    Gambling6c:
     stdDevAmnt: 90
-    stdDevDate: 7
+    stdDevDate: 1
 users:
   - username: 'sghun'
     firstName: 'Seong'

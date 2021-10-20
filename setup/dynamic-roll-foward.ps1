@@ -90,12 +90,11 @@ drrfConfiguration:
 
 $data2 | ForEach-Object {
     $Type = $_.Type
-    $Days = $_.Days
     $StdDev = $_.Max - $_.Min
 @"
    $type`:
     stdDevAmnt: $StdDev
-    stdDevDate: $Days
+    stdDevDate: 1
 "@
 }
 
