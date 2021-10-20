@@ -88,9 +88,10 @@ drrfConfiguration:
  varianceMap:
 "@
 
+
 $data2 | ForEach-Object {
     $Type = $_.Type
-    $StdDev = $_.Max - $_.Min
+    $StdDev = [Math]::Abs($_.Max - $_.Min)
 @"
    $type`:
     stdDevAmnt: $StdDev
@@ -118,9 +119,10 @@ $data2 `
 "@
     $_.Group `
     | ForEach-Object {
-        $amount = ($_.Max + $_.Min)/2.0
         $startdate = (get-date '2020-01-01T08:13:27+10:00')
         $nextdate = $startdate.AddDays($_.Days)
+        $amount = ($_.Max + $_.Min)/2.0
+        $cdtDbtInd = if ($amount -gt 0) { "DBIT" } else { "CRDT" }
 @"
     - other: '$($_.AccountNumber)'
       otherScheme: 'BBAN'
@@ -129,15 +131,15 @@ $data2 `
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: $amount
+          - amount: $([Math]::Abs($amount))
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
+            cdtDbtInd: $cdtDbtInd
             counterparty: '$($_.Merchant)'
             merchantCategoryCode: '$($_.MCC)'
             remittanceCat: '$($_.Type)'
-          - amount: $amount
+          - amount:  $([Math]::Abs($amount))
             bookingDate: '$(Get-Date $nextDate -Format "yyyy-MM-ddTHH:mm:ss+10:00")'
-            cdtDbtInd: DBIT
+            cdtDbtInd: $cdtDbtInd
             counterparty: '$($_.Merchant)'
             merchantCategoryCode: '$($_.MCC)'
             remittanceCat: '$($_.Type)'
