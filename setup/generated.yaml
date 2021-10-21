@@ -1,6 +1,6 @@
-# dynamic-rollforward.ps1 10/20/2021 15:22:13
+# dynamic-rollforward.ps1 10/21/2021 16:51:59
 drrfConfiguration:
- drrfProvisionAheadDays: 1000
+ drrfProvisionAheadDays: 600
  varianceMap:
    Grocery1:
     stdDevAmnt: 50
@@ -36,7 +36,7 @@ drrfConfiguration:
     stdDevAmnt: 70
     stdDevDate: 1
    Gambling1c:
-    stdDevAmnt: -500
+    stdDevAmnt: 500
     stdDevDate: 1
    Grocery2:
     stdDevAmnt: 0
@@ -84,7 +84,7 @@ drrfConfiguration:
     stdDevAmnt: 0
     stdDevDate: 1
    Gambling2c:
-    stdDevAmnt: -50
+    stdDevAmnt: 50
     stdDevDate: 1
    Bus3:
     stdDevAmnt: 0
@@ -105,7 +105,7 @@ drrfConfiguration:
     stdDevAmnt: 5
     stdDevDate: 1
    Gambling3b:
-    stdDevAmnt: -120
+    stdDevAmnt: 120
     stdDevDate: 1
    Grocery4:
     stdDevAmnt: 5
@@ -114,7 +114,7 @@ drrfConfiguration:
     stdDevAmnt: 0
     stdDevDate: 1
    Income4:
-    stdDevAmnt: -100
+    stdDevAmnt: 100
     stdDevDate: 1
    Gambling4a:
     stdDevAmnt: 5
@@ -123,10 +123,10 @@ drrfConfiguration:
     stdDevAmnt: 10
     stdDevDate: 1
    Gambling4d:
-    stdDevAmnt: -30
+    stdDevAmnt: 30
     stdDevDate: 1
    Gambling4c:
-    stdDevAmnt: -75
+    stdDevAmnt: 75
     stdDevDate: 1
    Fitness4:
     stdDevAmnt: 0
@@ -153,7 +153,7 @@ drrfConfiguration:
     stdDevAmnt: 40
     stdDevDate: 1
    Gambling5c:
-    stdDevAmnt: -100
+    stdDevAmnt: 100
     stdDevDate: 1
    Grocery6:
     stdDevAmnt: 100
@@ -204,14 +204,42 @@ users:
           - amount: 55
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Coles'
+            merchantName: 'Coles'
             merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery1'
+          - amount:  55
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Coles'
+            merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
             remittanceCat: 'Grocery1'
           - amount: 55
-            bookingDate: '2020-01-08T08:13:27+10:00'
+            bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Coles'
+            merchantName: 'Coles'
             merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery1'
+          - amount: 55
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Coles'
+            merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery1'
+          - amount: 55
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Coles'
+            merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
             remittanceCat: 'Grocery1'
     - other: '1857193'
       otherScheme: 'BBAN'
@@ -223,14 +251,26 @@ users:
           - amount: 80
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Caltex'
+            merchantName: 'Caltex'
             merchantCategoryCode: '5541'
+            counterparty: 'Caltex'
+            remittanceInfo: ''
             remittanceCat: 'Fuel1'
-          - amount: 80
+          - amount:  80
             bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Caltex'
+            merchantName: 'Caltex'
             merchantCategoryCode: '5541'
+            counterparty: 'Caltex'
+            remittanceInfo: ''
+            remittanceCat: 'Fuel1'
+          - amount: 80
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Caltex'
+            merchantCategoryCode: '5541'
+            counterparty: 'Caltex'
+            remittanceInfo: ''
             remittanceCat: 'Fuel1'
     - other: '1857193'
       otherScheme: 'BBAN'
@@ -242,14 +282,26 @@ users:
           - amount: 1400
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'NAB'
+            merchantName: 'NAB'
             merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
+            remittanceCat: 'Mortgage1'
+          - amount:  1400
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'NAB'
+            merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
             remittanceCat: 'Mortgage1'
           - amount: 1400
-            bookingDate: '2020-01-29T08:13:27+10:00'
+            bookingDate: '2020-02-26T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'NAB'
+            merchantName: 'NAB'
             merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
             remittanceCat: 'Mortgage1'
     - other: '1857193'
       otherScheme: 'BBAN'
@@ -261,14 +313,26 @@ users:
           - amount: 525
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Urban Utilities'
+            merchantName: 'Urban Utilities'
             merchantCategoryCode: '4900'
+            counterparty: 'Urban Utilities'
+            remittanceInfo: ''
+            remittanceCat: 'Utilities1'
+          - amount:  525
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Urban Utilities'
+            merchantCategoryCode: '4900'
+            counterparty: 'Urban Utilities'
+            remittanceInfo: ''
             remittanceCat: 'Utilities1'
           - amount: 525
-            bookingDate: '2020-03-31T08:13:27+10:00'
+            bookingDate: '2020-06-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Urban Utilities'
+            merchantName: 'Urban Utilities'
             merchantCategoryCode: '4900'
+            counterparty: 'Urban Utilities'
+            remittanceInfo: ''
             remittanceCat: 'Utilities1'
     - other: '1857193'
       otherScheme: 'BBAN'
@@ -280,14 +344,26 @@ users:
           - amount: 28
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Netflix'
+            merchantName: 'Netflix'
             merchantCategoryCode: '7841'
+            counterparty: 'Netflix'
+            remittanceInfo: ''
             remittanceCat: 'Subscriptions1'
-          - amount: 28
+          - amount:  28
             bookingDate: '2020-01-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Netflix'
+            merchantName: 'Netflix'
             merchantCategoryCode: '7841'
+            counterparty: 'Netflix'
+            remittanceInfo: ''
+            remittanceCat: 'Subscriptions1'
+          - amount: 28
+            bookingDate: '2020-02-26T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Netflix'
+            merchantCategoryCode: '7841'
+            counterparty: 'Netflix'
+            remittanceInfo: ''
             remittanceCat: 'Subscriptions1'
     - other: '1857193'
       otherScheme: 'BBAN'
@@ -299,14 +375,26 @@ users:
           - amount: 28
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Amazon Prime'
+            merchantName: 'Amazon Prime'
             merchantCategoryCode: '7841'
+            counterparty: 'Amazon Prime'
+            remittanceInfo: ''
             remittanceCat: 'Subscriptions1'
-          - amount: 28
+          - amount:  28
             bookingDate: '2020-01-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Amazon Prime'
+            merchantName: 'Amazon Prime'
             merchantCategoryCode: '7841'
+            counterparty: 'Amazon Prime'
+            remittanceInfo: ''
+            remittanceCat: 'Subscriptions1'
+          - amount: 28
+            bookingDate: '2020-02-26T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Amazon Prime'
+            merchantCategoryCode: '7841'
+            counterparty: 'Amazon Prime'
+            remittanceInfo: ''
             remittanceCat: 'Subscriptions1'
     - other: '1857193'
       otherScheme: 'BBAN'
@@ -318,14 +406,26 @@ users:
           - amount: 100
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'GP Clinic'
+            merchantName: 'GP Clinic'
             merchantCategoryCode: '8099'
+            counterparty: 'GP Clinic'
+            remittanceInfo: ''
             remittanceCat: 'Medical1'
-          - amount: 100
+          - amount:  100
             bookingDate: '2020-03-31T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'GP Clinic'
+            merchantName: 'GP Clinic'
             merchantCategoryCode: '8099'
+            counterparty: 'GP Clinic'
+            remittanceInfo: ''
+            remittanceCat: 'Medical1'
+          - amount: 100
+            bookingDate: '2020-06-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'GP Clinic'
+            merchantCategoryCode: '8099'
+            counterparty: 'GP Clinic'
+            remittanceInfo: ''
             remittanceCat: 'Medical1'
     - other: '1857193'
       otherScheme: 'BBAN'
@@ -334,17 +434,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -5400
+          - amount: 5400
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income1'
-          - amount: -5400
+          - amount:  5400
             bookingDate: '2020-01-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
+            remittanceCat: 'Income1'
+          - amount: 5400
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
+            merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income1'
     - other: '1857751'
       otherScheme: 'BBAN'
@@ -356,14 +468,42 @@ users:
           - amount: 70
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Ladbrokes'
+            merchantName: 'Ladbrokes'
             merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
             remittanceCat: 'Gambling1a'
-          - amount: 70
+          - amount:  70
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Ladbrokes'
+            merchantName: 'Ladbrokes'
             merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1a'
+          - amount: 70
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1a'
+          - amount: 70
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1a'
+          - amount: 70
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
             remittanceCat: 'Gambling1a'
     - other: '1857751'
       otherScheme: 'BBAN'
@@ -375,14 +515,42 @@ users:
           - amount: 70
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Bet365'
+            merchantName: 'Bet365'
             merchantCategoryCode: '7995'
+            counterparty: 'Bet365'
+            remittanceInfo: ''
             remittanceCat: 'Gambling1d'
-          - amount: 70
+          - amount:  70
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Bet365'
+            merchantName: 'Bet365'
             merchantCategoryCode: '7995'
+            counterparty: 'Bet365'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1d'
+          - amount: 70
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Bet365'
+            merchantCategoryCode: '7995'
+            counterparty: 'Bet365'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1d'
+          - amount: 70
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Bet365'
+            merchantCategoryCode: '7995'
+            counterparty: 'Bet365'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1d'
+          - amount: 70
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Bet365'
+            merchantCategoryCode: '7995'
+            counterparty: 'Bet365'
+            remittanceInfo: ''
             remittanceCat: 'Gambling1d'
     - other: '1857751'
       otherScheme: 'BBAN'
@@ -394,14 +562,42 @@ users:
           - amount: 115
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling1b'
-          - amount: 115
+          - amount:  115
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1b'
+          - amount: 115
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1b'
+          - amount: 115
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1b'
+          - amount: 115
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling1b'
     - other: '1857751'
       otherScheme: 'BBAN'
@@ -410,17 +606,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -750
+          - amount: 750
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Ladbrokes'
+            cdtDbtInd: CRDT
+            merchantName: 'Ladbrokes'
             merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
             remittanceCat: 'Gambling1c'
-          - amount: -750
+          - amount:  750
             bookingDate: '2020-03-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Ladbrokes'
+            cdtDbtInd: CRDT
+            merchantName: 'Ladbrokes'
             merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling1c'
+          - amount: 750
+            bookingDate: '2020-06-29T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
             remittanceCat: 'Gambling1c'
   - username: 'sclause'
     firstName: 'Santa'
@@ -437,14 +645,42 @@ users:
           - amount: 120
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Coles'
+            merchantName: 'Coles'
             merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery2'
+          - amount:  120
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Coles'
+            merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
             remittanceCat: 'Grocery2'
           - amount: 120
-            bookingDate: '2020-01-08T08:13:27+10:00'
+            bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Coles'
+            merchantName: 'Coles'
             merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery2'
+          - amount: 120
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Coles'
+            merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery2'
+          - amount: 120
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Coles'
+            merchantCategoryCode: '5411'
+            counterparty: 'Coles'
+            remittanceInfo: ''
             remittanceCat: 'Grocery2'
     - other: '2875568'
       otherScheme: 'BBAN'
@@ -456,14 +692,26 @@ users:
           - amount: 80
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Caltex'
+            merchantName: 'Caltex'
             merchantCategoryCode: '5541'
+            counterparty: 'Caltex'
+            remittanceInfo: ''
+            remittanceCat: 'Fuel2'
+          - amount:  80
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Caltex'
+            merchantCategoryCode: '5541'
+            counterparty: 'Caltex'
+            remittanceInfo: ''
             remittanceCat: 'Fuel2'
           - amount: 80
-            bookingDate: '2020-01-15T08:13:27+10:00'
+            bookingDate: '2020-01-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Caltex'
+            merchantName: 'Caltex'
             merchantCategoryCode: '5541'
+            counterparty: 'Caltex'
+            remittanceInfo: ''
             remittanceCat: 'Fuel2'
     - other: '2875043'
       otherScheme: 'BBAN'
@@ -475,14 +723,26 @@ users:
           - amount: 375
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Mazda'
+            merchantName: 'Mazda'
             merchantCategoryCode: '5511'
+            counterparty: 'Mazda'
+            remittanceInfo: ''
             remittanceCat: 'Car2'
-          - amount: 375
+          - amount:  375
             bookingDate: '2020-06-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Mazda'
+            merchantName: 'Mazda'
             merchantCategoryCode: '5511'
+            counterparty: 'Mazda'
+            remittanceInfo: ''
+            remittanceCat: 'Car2'
+          - amount: 375
+            bookingDate: '2020-12-26T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Mazda'
+            merchantCategoryCode: '5511'
+            counterparty: 'Mazda'
+            remittanceInfo: ''
             remittanceCat: 'Car2'
     - other: '2875043'
       otherScheme: 'BBAN'
@@ -494,14 +754,26 @@ users:
           - amount: 560
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: ''
+            merchantName: ''
             merchantCategoryCode: '0'
+            counterparty: ''
+            remittanceInfo: ''
+            remittanceCat: 'BodyCorp2'
+          - amount:  560
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: ''
+            merchantCategoryCode: '0'
+            counterparty: ''
+            remittanceInfo: ''
             remittanceCat: 'BodyCorp2'
           - amount: 560
-            bookingDate: '2020-03-31T08:13:27+10:00'
+            bookingDate: '2020-06-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: ''
+            merchantName: ''
             merchantCategoryCode: '0'
+            counterparty: ''
+            remittanceInfo: ''
             remittanceCat: 'BodyCorp2'
     - other: '2875568'
       otherScheme: 'BBAN'
@@ -513,14 +785,26 @@ users:
           - amount: 1400
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'NAB'
+            merchantName: 'NAB'
             merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
+            remittanceCat: 'Mortgage2'
+          - amount:  1400
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'NAB'
+            merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
             remittanceCat: 'Mortgage2'
           - amount: 1400
-            bookingDate: '2020-01-31T08:13:27+10:00'
+            bookingDate: '2020-03-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'NAB'
+            merchantName: 'NAB'
             merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
             remittanceCat: 'Mortgage2'
     - other: '2875043'
       otherScheme: 'BBAN'
@@ -532,14 +816,26 @@ users:
           - amount: 300
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Energex'
+            merchantName: 'Energex'
             merchantCategoryCode: '4900'
+            counterparty: 'Energex'
+            remittanceInfo: ''
+            remittanceCat: 'Electricity2 '
+          - amount:  300
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Energex'
+            merchantCategoryCode: '4900'
+            counterparty: 'Energex'
+            remittanceInfo: ''
             remittanceCat: 'Electricity2 '
           - amount: 300
-            bookingDate: '2020-03-31T08:13:27+10:00'
+            bookingDate: '2020-06-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Energex'
+            merchantName: 'Energex'
             merchantCategoryCode: '4900'
+            counterparty: 'Energex'
+            remittanceInfo: ''
             remittanceCat: 'Electricity2 '
     - other: '2875568'
       otherScheme: 'BBAN'
@@ -551,14 +847,26 @@ users:
           - amount: 250
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Urban Utilities'
+            merchantName: 'Urban Utilities'
             merchantCategoryCode: '4900'
+            counterparty: 'Urban Utilities'
+            remittanceInfo: ''
+            remittanceCat: 'Utilities2'
+          - amount:  250
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Urban Utilities'
+            merchantCategoryCode: '4900'
+            counterparty: 'Urban Utilities'
+            remittanceInfo: ''
             remittanceCat: 'Utilities2'
           - amount: 250
-            bookingDate: '2020-03-31T08:13:27+10:00'
+            bookingDate: '2020-06-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Urban Utilities'
+            merchantName: 'Urban Utilities'
             merchantCategoryCode: '4900'
+            counterparty: 'Urban Utilities'
+            remittanceInfo: ''
             remittanceCat: 'Utilities2'
     - other: '2875568'
       otherScheme: 'BBAN'
@@ -570,14 +878,26 @@ users:
           - amount: 100
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'S&N'
+            merchantName: 'S&N'
             merchantCategoryCode: '8099'
+            counterparty: 'S&N'
+            remittanceInfo: ''
             remittanceCat: 'Medical2'
-          - amount: 100
+          - amount:  100
             bookingDate: '2020-01-31T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'S&N'
+            merchantName: 'S&N'
             merchantCategoryCode: '8099'
+            counterparty: 'S&N'
+            remittanceInfo: ''
+            remittanceCat: 'Medical2'
+          - amount: 100
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'S&N'
+            merchantCategoryCode: '8099'
+            counterparty: 'S&N'
+            remittanceInfo: ''
             remittanceCat: 'Medical2'
     - other: '2875043'
       otherScheme: 'BBAN'
@@ -586,17 +906,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -5500
+          - amount: 5500
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income2'
-          - amount: -5500
+          - amount:  5500
             bookingDate: '2020-01-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
+            remittanceCat: 'Income2'
+          - amount: 5500
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
+            merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income2'
     - other: '2875568'
       otherScheme: 'BBAN'
@@ -608,52 +940,104 @@ users:
           - amount: 100
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Jetts'
+            merchantName: 'Jetts'
             merchantCategoryCode: '7032'
+            counterparty: 'Jetts'
+            remittanceInfo: ''
             remittanceCat: 'Fitness2'
-          - amount: 100
+          - amount:  100
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Jetts'
+            merchantName: 'Jetts'
             merchantCategoryCode: '7032'
+            counterparty: 'Jetts'
+            remittanceInfo: ''
             remittanceCat: 'Fitness2'
-    - other: '2875568'
-      otherScheme: 'BBAN'
-      countryCode: 'AU'
-      name: Deposit account
-      currency: AUD
-      startBalance: 5252.570246
-      transactions:
-          - amount: 350
-            bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Flight Centre'
-            merchantCategoryCode: '3756'
-            remittanceCat: 'Holiday2'
-          - amount: 350
-            bookingDate: '2020-03-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Flight Centre'
-            merchantCategoryCode: '3756'
-            remittanceCat: 'Holiday2'
-    - other: '2875043'
-      otherScheme: 'BBAN'
-      countryCode: 'AU'
-      name: Deposit account
-      currency: AUD
-      startBalance: 5252.570246
-      transactions:
-          - amount: 125
-            bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'ATM'
-            merchantCategoryCode: '0'
-            remittanceCat: 'CashOut2'
-          - amount: 125
+          - amount: 100
             bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'ATM'
+            merchantName: 'Jetts'
+            merchantCategoryCode: '7032'
+            counterparty: 'Jetts'
+            remittanceInfo: ''
+            remittanceCat: 'Fitness2'
+          - amount: 100
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Jetts'
+            merchantCategoryCode: '7032'
+            counterparty: 'Jetts'
+            remittanceInfo: ''
+            remittanceCat: 'Fitness2'
+          - amount: 100
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Jetts'
+            merchantCategoryCode: '7032'
+            counterparty: 'Jetts'
+            remittanceInfo: ''
+            remittanceCat: 'Fitness2'
+    - other: '2875568'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 350
+            bookingDate: '2020-01-01T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Flight Centre'
+            merchantCategoryCode: '3756'
+            counterparty: 'Flight Centre'
+            remittanceInfo: ''
+            remittanceCat: 'Holiday2'
+          - amount:  350
+            bookingDate: '2020-03-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Flight Centre'
+            merchantCategoryCode: '3756'
+            counterparty: 'Flight Centre'
+            remittanceInfo: ''
+            remittanceCat: 'Holiday2'
+          - amount: 350
+            bookingDate: '2020-06-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Flight Centre'
+            merchantCategoryCode: '3756'
+            counterparty: 'Flight Centre'
+            remittanceInfo: ''
+            remittanceCat: 'Holiday2'
+    - other: '2875043'
+      otherScheme: 'BBAN'
+      countryCode: 'AU'
+      name: Deposit account
+      currency: AUD
+      startBalance: 5252.570246
+      transactions:
+          - amount: 125
+            bookingDate: '2020-01-01T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'ATM'
             merchantCategoryCode: '0'
+            counterparty: 'ATM'
+            remittanceInfo: ''
+            remittanceCat: 'CashOut2'
+          - amount:  125
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'ATM'
+            merchantCategoryCode: '0'
+            counterparty: 'ATM'
+            remittanceInfo: ''
+            remittanceCat: 'CashOut2'
+          - amount: 125
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'ATM'
+            merchantCategoryCode: '0'
+            counterparty: 'ATM'
+            remittanceInfo: ''
             remittanceCat: 'CashOut2'
     - other: '2875568'
       otherScheme: 'BBAN'
@@ -665,14 +1049,26 @@ users:
           - amount: 15
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Netflix'
+            merchantName: 'Netflix'
             merchantCategoryCode: '7841'
+            counterparty: 'Netflix'
+            remittanceInfo: ''
             remittanceCat: 'Streaming2'
-          - amount: 15
+          - amount:  15
             bookingDate: '2020-01-31T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Netflix'
+            merchantName: 'Netflix'
             merchantCategoryCode: '7841'
+            counterparty: 'Netflix'
+            remittanceInfo: ''
+            remittanceCat: 'Streaming2'
+          - amount: 15
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Netflix'
+            merchantCategoryCode: '7841'
+            counterparty: 'Netflix'
+            remittanceInfo: ''
             remittanceCat: 'Streaming2'
     - other: '2875043'
       otherScheme: 'BBAN'
@@ -684,14 +1080,42 @@ users:
           - amount: 15
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling2a'
-          - amount: 15
+          - amount:  15
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling2a'
+          - amount: 15
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling2a'
+          - amount: 15
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling2a'
+          - amount: 15
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling2a'
     - other: '2875043'
       otherScheme: 'BBAN'
@@ -703,14 +1127,26 @@ users:
           - amount: 200
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Neds'
+            merchantName: 'Neds'
             merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
             remittanceCat: 'Gambling2b'
-          - amount: 200
+          - amount:  200
             bookingDate: '2020-01-31T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Neds'
+            merchantName: 'Neds'
             merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling2b'
+          - amount: 200
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Neds'
+            merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
             remittanceCat: 'Gambling2b'
     - other: '2875043'
       otherScheme: 'BBAN'
@@ -719,17 +1155,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -75
+          - amount: 75
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Neds'
+            cdtDbtInd: CRDT
+            merchantName: 'Neds'
             merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
             remittanceCat: 'Gambling2c'
-          - amount: -75
+          - amount:  75
             bookingDate: '2020-01-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Neds'
+            cdtDbtInd: CRDT
+            merchantName: 'Neds'
             merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling2c'
+          - amount: 75
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Neds'
+            merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
             remittanceCat: 'Gambling2c'
   - username: 'tsmith'
     firstName: 'Tim'
@@ -746,14 +1194,42 @@ users:
           - amount: 50
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Translink'
+            merchantName: 'Translink'
             merchantCategoryCode: '3756'
+            counterparty: 'Translink'
+            remittanceInfo: ''
             remittanceCat: 'Bus3'
-          - amount: 50
+          - amount:  50
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Translink'
+            merchantName: 'Translink'
             merchantCategoryCode: '3756'
+            counterparty: 'Translink'
+            remittanceInfo: ''
+            remittanceCat: 'Bus3'
+          - amount: 50
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Translink'
+            merchantCategoryCode: '3756'
+            counterparty: 'Translink'
+            remittanceInfo: ''
+            remittanceCat: 'Bus3'
+          - amount: 50
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Translink'
+            merchantCategoryCode: '3756'
+            counterparty: 'Translink'
+            remittanceInfo: ''
+            remittanceCat: 'Bus3'
+          - amount: 50
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Translink'
+            merchantCategoryCode: '3756'
+            counterparty: 'Translink'
+            remittanceInfo: ''
             remittanceCat: 'Bus3'
     - other: '3857193'
       otherScheme: 'BBAN'
@@ -765,14 +1241,26 @@ users:
           - amount: 300
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Rentals Brisbane'
+            merchantName: 'Rentals Brisbane'
             merchantCategoryCode: '0'
+            counterparty: 'Rentals Brisbane'
+            remittanceInfo: ''
+            remittanceCat: 'Rent3'
+          - amount:  300
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Rentals Brisbane'
+            merchantCategoryCode: '0'
+            counterparty: 'Rentals Brisbane'
+            remittanceInfo: ''
             remittanceCat: 'Rent3'
           - amount: 300
-            bookingDate: '2020-01-15T08:13:27+10:00'
+            bookingDate: '2020-01-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Rentals Brisbane'
+            merchantName: 'Rentals Brisbane'
             merchantCategoryCode: '0'
+            counterparty: 'Rentals Brisbane'
+            remittanceInfo: ''
             remittanceCat: 'Rent3'
     - other: '3857193'
       otherScheme: 'BBAN'
@@ -784,14 +1272,26 @@ users:
           - amount: 105
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Energex'
+            merchantName: 'Energex'
             merchantCategoryCode: '4900'
+            counterparty: 'Energex'
+            remittanceInfo: ''
             remittanceCat: 'Utilities3'
-          - amount: 105
+          - amount:  105
             bookingDate: '2020-03-31T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Energex'
+            merchantName: 'Energex'
             merchantCategoryCode: '4900'
+            counterparty: 'Energex'
+            remittanceInfo: ''
+            remittanceCat: 'Utilities3'
+          - amount: 105
+            bookingDate: '2020-06-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Energex'
+            merchantCategoryCode: '4900'
+            counterparty: 'Energex'
+            remittanceInfo: ''
             remittanceCat: 'Utilities3'
     - other: '3857193'
       otherScheme: 'BBAN'
@@ -803,14 +1303,26 @@ users:
           - amount: 45
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Brisbane GPs'
+            merchantName: 'Brisbane GPs'
             merchantCategoryCode: '8099'
+            counterparty: 'Brisbane GPs'
+            remittanceInfo: ''
             remittanceCat: 'Medical3'
-          - amount: 45
+          - amount:  45
             bookingDate: '2020-06-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Brisbane GPs'
+            merchantName: 'Brisbane GPs'
             merchantCategoryCode: '8099'
+            counterparty: 'Brisbane GPs'
+            remittanceInfo: ''
+            remittanceCat: 'Medical3'
+          - amount: 45
+            bookingDate: '2020-12-26T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Brisbane GPs'
+            merchantCategoryCode: '8099'
+            counterparty: 'Brisbane GPs'
+            remittanceInfo: ''
             remittanceCat: 'Medical3'
     - other: '3857193'
       otherScheme: 'BBAN'
@@ -819,17 +1331,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -660
+          - amount: 660
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Centerlink'
+            cdtDbtInd: CRDT
+            merchantName: 'Centerlink'
             merchantCategoryCode: '0'
+            counterparty: 'Centerlink'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income3'
-          - amount: -660
+          - amount:  660
             bookingDate: '2020-01-15T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Centerlink'
+            cdtDbtInd: CRDT
+            merchantName: 'Centerlink'
             merchantCategoryCode: '0'
+            counterparty: 'Centerlink'
+            remittanceInfo: 'Income'
+            remittanceCat: 'Income3'
+          - amount: 660
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Centerlink'
+            merchantCategoryCode: '0'
+            counterparty: 'Centerlink'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income3'
     - other: '3857193'
       otherScheme: 'BBAN'
@@ -841,14 +1365,26 @@ users:
           - amount: 12.5
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Ladbrokes'
+            merchantName: 'Ladbrokes'
             merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
             remittanceCat: 'Gambling3a'
-          - amount: 12.5
+          - amount:  12.5
             bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Ladbrokes'
+            merchantName: 'Ladbrokes'
             merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling3a'
+          - amount: 12.5
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Ladbrokes'
+            merchantCategoryCode: '7995'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
             remittanceCat: 'Gambling3a'
     - other: '3857193'
       otherScheme: 'BBAN'
@@ -857,17 +1393,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -60
+          - amount: 60
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Ladbrokes'
+            cdtDbtInd: CRDT
+            merchantName: 'Ladbrokes'
             merchantCategoryCode: '0'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
             remittanceCat: 'Gambling3b'
-          - amount: -60
+          - amount:  60
             bookingDate: '2020-05-20T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Ladbrokes'
+            cdtDbtInd: CRDT
+            merchantName: 'Ladbrokes'
             merchantCategoryCode: '0'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling3b'
+          - amount: 60
+            bookingDate: '2020-10-07T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Ladbrokes'
+            merchantCategoryCode: '0'
+            counterparty: 'Ladbrokes'
+            remittanceInfo: ''
             remittanceCat: 'Gambling3b'
   - username: 'dduck'
     firstName: 'Dolly'
@@ -884,14 +1432,58 @@ users:
           - amount: 27.5
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Woolworths'
+            merchantName: 'Woolworths'
             merchantCategoryCode: '5411'
+            counterparty: 'Woolworths'
+            remittanceInfo: ''
             remittanceCat: 'Grocery4'
-          - amount: 27.5
+          - amount:  27.5
             bookingDate: '2020-01-06T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Woolworths'
+            merchantName: 'Woolworths'
             merchantCategoryCode: '5411'
+            counterparty: 'Woolworths'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery4'
+          - amount: 27.5
+            bookingDate: '2020-01-11T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Woolworths'
+            merchantCategoryCode: '5411'
+            counterparty: 'Woolworths'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery4'
+          - amount: 27.5
+            bookingDate: '2020-01-16T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Woolworths'
+            merchantCategoryCode: '5411'
+            counterparty: 'Woolworths'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery4'
+          - amount: 27.5
+            bookingDate: '2020-01-21T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Woolworths'
+            merchantCategoryCode: '5411'
+            counterparty: 'Woolworths'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery4'
+          - amount: 27.5
+            bookingDate: '2020-01-26T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Woolworths'
+            merchantCategoryCode: '5411'
+            counterparty: 'Woolworths'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery4'
+          - amount: 27.5
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Woolworths'
+            merchantCategoryCode: '5411'
+            counterparty: 'Woolworths'
+            remittanceInfo: ''
             remittanceCat: 'Grocery4'
     - other: '4149234'
       otherScheme: 'BBAN'
@@ -903,14 +1495,26 @@ users:
           - amount: 200
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: ''
+            merchantName: ''
             merchantCategoryCode: '0'
+            counterparty: ''
+            remittanceInfo: ''
+            remittanceCat: 'Rent4'
+          - amount:  200
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: ''
+            merchantCategoryCode: '0'
+            counterparty: ''
+            remittanceInfo: ''
             remittanceCat: 'Rent4'
           - amount: 200
-            bookingDate: '2020-01-15T08:13:27+10:00'
+            bookingDate: '2020-01-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: ''
+            merchantName: ''
             merchantCategoryCode: '0'
+            counterparty: ''
+            remittanceInfo: ''
             remittanceCat: 'Rent4'
     - other: '4149234'
       otherScheme: 'BBAN'
@@ -919,17 +1523,45 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -350
+          - amount: 350
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income4'
-          - amount: -350
+          - amount:  350
             bookingDate: '2020-01-08T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
+            remittanceCat: 'Income4'
+          - amount: 350
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
+            merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
+            remittanceCat: 'Income4'
+          - amount: 350
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
+            merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
+            remittanceCat: 'Income4'
+          - amount: 350
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
+            merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income4'
     - other: '4149234'
       otherScheme: 'BBAN'
@@ -941,14 +1573,90 @@ users:
           - amount: 7.5
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Pointsbet'
+            merchantName: 'Pointsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling4a'
-          - amount: 7.5
+          - amount:  7.5
             bookingDate: '2020-01-04T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Pointsbet'
+            merchantName: 'Pointsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-07T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-10T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-13T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-16T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-19T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-25T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-28T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4a'
+          - amount: 7.5
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling4a'
     - other: '4149234'
       otherScheme: 'BBAN'
@@ -960,14 +1668,42 @@ users:
           - amount: 20
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4b'
+          - amount:  20
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling4b'
           - amount: 20
-            bookingDate: '2020-01-08T08:13:27+10:00'
+            bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4b'
+          - amount: 20
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4b'
+          - amount: 20
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling4b'
     - other: '4149234'
       otherScheme: 'BBAN'
@@ -976,17 +1712,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -15
+          - amount: 15
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Pointsbet'
+            cdtDbtInd: CRDT
+            merchantName: 'Pointsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling4d'
-          - amount: -15
+          - amount:  15
             bookingDate: '2020-01-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Pointsbet'
+            cdtDbtInd: CRDT
+            merchantName: 'Pointsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4d'
+          - amount: 15
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Pointsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Pointsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling4d'
     - other: '4149234'
       otherScheme: 'BBAN'
@@ -995,17 +1743,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -37.5
+          - amount: 37.5
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            cdtDbtInd: CRDT
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling4c'
-          - amount: -37.5
+          - amount:  37.5
             bookingDate: '2020-01-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            cdtDbtInd: CRDT
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling4c'
+          - amount: 37.5
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling4c'
     - other: '4149234'
       otherScheme: 'BBAN'
@@ -1017,14 +1777,26 @@ users:
           - amount: 39
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Anytime Fitness'
+            merchantName: 'Anytime Fitness'
             merchantCategoryCode: '7032'
+            counterparty: 'Anytime Fitness'
+            remittanceInfo: ''
             remittanceCat: 'Fitness4'
-          - amount: 39
+          - amount:  39
             bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Anytime Fitness'
+            merchantName: 'Anytime Fitness'
             merchantCategoryCode: '7032'
+            counterparty: 'Anytime Fitness'
+            remittanceInfo: ''
+            remittanceCat: 'Fitness4'
+          - amount: 39
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Anytime Fitness'
+            merchantCategoryCode: '7032'
+            counterparty: 'Anytime Fitness'
+            remittanceInfo: ''
             remittanceCat: 'Fitness4'
     - other: '4149234'
       otherScheme: 'BBAN'
@@ -1036,14 +1808,42 @@ users:
           - amount: 32.5
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Pig & Whistle'
+            merchantName: 'Pig & Whistle'
             merchantCategoryCode: '5813'
+            counterparty: 'Pig & Whistle'
+            remittanceInfo: ''
             remittanceCat: 'Alcohol4'
-          - amount: 32.5
+          - amount:  32.5
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Pig & Whistle'
+            merchantName: 'Pig & Whistle'
             merchantCategoryCode: '5813'
+            counterparty: 'Pig & Whistle'
+            remittanceInfo: ''
+            remittanceCat: 'Alcohol4'
+          - amount: 32.5
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pig & Whistle'
+            merchantCategoryCode: '5813'
+            counterparty: 'Pig & Whistle'
+            remittanceInfo: ''
+            remittanceCat: 'Alcohol4'
+          - amount: 32.5
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pig & Whistle'
+            merchantCategoryCode: '5813'
+            counterparty: 'Pig & Whistle'
+            remittanceInfo: ''
+            remittanceCat: 'Alcohol4'
+          - amount: 32.5
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Pig & Whistle'
+            merchantCategoryCode: '5813'
+            counterparty: 'Pig & Whistle'
+            remittanceInfo: ''
             remittanceCat: 'Alcohol4'
   - username: 'eelephant'
     firstName: 'Elvis'
@@ -1060,14 +1860,42 @@ users:
           - amount: 65
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'ALDI'
+            merchantName: 'ALDI'
             merchantCategoryCode: '5411'
+            counterparty: 'ALDI'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery5'
+          - amount:  65
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'ALDI'
+            merchantCategoryCode: '5411'
+            counterparty: 'ALDI'
+            remittanceInfo: ''
             remittanceCat: 'Grocery5'
           - amount: 65
-            bookingDate: '2020-01-08T08:13:27+10:00'
+            bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'ALDI'
+            merchantName: 'ALDI'
             merchantCategoryCode: '5411'
+            counterparty: 'ALDI'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery5'
+          - amount: 65
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'ALDI'
+            merchantCategoryCode: '5411'
+            counterparty: 'ALDI'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery5'
+          - amount: 65
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'ALDI'
+            merchantCategoryCode: '5411'
+            counterparty: 'ALDI'
+            remittanceInfo: ''
             remittanceCat: 'Grocery5'
     - other: '5551234'
       otherScheme: 'BBAN'
@@ -1079,14 +1907,26 @@ users:
           - amount: 45
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'United'
+            merchantName: 'United'
             merchantCategoryCode: '5541'
+            counterparty: 'United'
+            remittanceInfo: ''
             remittanceCat: 'Fuel5'
-          - amount: 45
+          - amount:  45
             bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'United'
+            merchantName: 'United'
             merchantCategoryCode: '5541'
+            counterparty: 'United'
+            remittanceInfo: ''
+            remittanceCat: 'Fuel5'
+          - amount: 45
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'United'
+            merchantCategoryCode: '5541'
+            counterparty: 'United'
+            remittanceInfo: ''
             remittanceCat: 'Fuel5'
     - other: '5551234'
       otherScheme: 'BBAN'
@@ -1098,14 +1938,26 @@ users:
           - amount: 1600
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'NAB'
+            merchantName: 'NAB'
             merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
             remittanceCat: 'Rent5'
-          - amount: 1600
+          - amount:  1600
             bookingDate: '2020-01-29T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'NAB'
+            merchantName: 'NAB'
             merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
+            remittanceCat: 'Rent5'
+          - amount: 1600
+            bookingDate: '2020-02-26T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'NAB'
+            merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
             remittanceCat: 'Rent5'
     - other: '5551234'
       otherScheme: 'BBAN'
@@ -1114,17 +1966,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -4000
+          - amount: 4000
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income5'
-          - amount: -4000
+          - amount:  4000
             bookingDate: '2020-01-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
+            remittanceCat: 'Income5'
+          - amount: 4000
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
+            merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income5'
     - other: '5551234'
       otherScheme: 'BBAN'
@@ -1136,14 +2000,42 @@ users:
           - amount: 75
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling5a'
+          - amount:  75
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling5a'
           - amount: 75
-            bookingDate: '2020-01-08T08:13:27+10:00'
+            bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling5a'
+          - amount: 75
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling5a'
+          - amount: 75
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling5a'
     - other: '5551234'
       otherScheme: 'BBAN'
@@ -1155,14 +2047,42 @@ users:
           - amount: 30
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling5b'
-          - amount: 30
+          - amount:  30
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling5b'
+          - amount: 30
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling5b'
+          - amount: 30
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling5b'
+          - amount: 30
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling5b'
     - other: '5551234'
       otherScheme: 'BBAN'
@@ -1171,17 +2091,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -150
+          - amount: 150
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            cdtDbtInd: CRDT
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling5c'
-          - amount: -150
+          - amount:  150
             bookingDate: '2020-03-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            cdtDbtInd: CRDT
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling5c'
+          - amount: 150
+            bookingDate: '2020-06-29T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling5c'
   - username: 'pstar'
     firstName: 'Patrick'
@@ -1198,14 +2130,26 @@ users:
           - amount: 550
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'ALDI'
+            merchantName: 'ALDI'
             merchantCategoryCode: '5411'
+            counterparty: 'ALDI'
+            remittanceInfo: ''
+            remittanceCat: 'Grocery6'
+          - amount:  550
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'ALDI'
+            merchantCategoryCode: '5411'
+            counterparty: 'ALDI'
+            remittanceInfo: ''
             remittanceCat: 'Grocery6'
           - amount: 550
-            bookingDate: '2020-01-31T08:13:27+10:00'
+            bookingDate: '2020-03-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'ALDI'
+            merchantName: 'ALDI'
             merchantCategoryCode: '5411'
+            counterparty: 'ALDI'
+            remittanceInfo: ''
             remittanceCat: 'Grocery6'
     - other: '6276241'
       otherScheme: 'BBAN'
@@ -1217,14 +2161,26 @@ users:
           - amount: 60
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: '7Eleven '
+            merchantName: '7Eleven '
             merchantCategoryCode: '5541'
+            counterparty: '7Eleven '
+            remittanceInfo: ''
+            remittanceCat: 'Fuel6'
+          - amount:  60
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: '7Eleven '
+            merchantCategoryCode: '5541'
+            counterparty: '7Eleven '
+            remittanceInfo: ''
             remittanceCat: 'Fuel6'
           - amount: 60
-            bookingDate: '2020-01-31T08:13:27+10:00'
+            bookingDate: '2020-03-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: '7Eleven '
+            merchantName: '7Eleven '
             merchantCategoryCode: '5541'
+            counterparty: '7Eleven '
+            remittanceInfo: ''
             remittanceCat: 'Fuel6'
     - other: '6276247'
       otherScheme: 'BBAN'
@@ -1236,14 +2192,26 @@ users:
           - amount: 1950
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'NAB'
+            merchantName: 'NAB'
             merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
             remittanceCat: 'Mortgage6'
-          - amount: 1950
+          - amount:  1950
             bookingDate: '2020-01-31T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'NAB'
+            merchantName: 'NAB'
             merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
+            remittanceCat: 'Mortgage6'
+          - amount: 1950
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'NAB'
+            merchantCategoryCode: '0'
+            counterparty: 'NAB'
+            remittanceInfo: ''
             remittanceCat: 'Mortgage6'
     - other: '6276247'
       otherScheme: 'BBAN'
@@ -1255,14 +2223,26 @@ users:
           - amount: 275
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Netflix, Spotify'
+            merchantName: 'Netflix, Spotify'
             merchantCategoryCode: '7841'
+            counterparty: 'Netflix, Spotify'
+            remittanceInfo: ''
+            remittanceCat: 'Entertainment'
+          - amount:  275
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Netflix, Spotify'
+            merchantCategoryCode: '7841'
+            counterparty: 'Netflix, Spotify'
+            remittanceInfo: ''
             remittanceCat: 'Entertainment'
           - amount: 275
-            bookingDate: '2020-01-31T08:13:27+10:00'
+            bookingDate: '2020-03-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Netflix, Spotify'
+            merchantName: 'Netflix, Spotify'
             merchantCategoryCode: '7841'
+            counterparty: 'Netflix, Spotify'
+            remittanceInfo: ''
             remittanceCat: 'Entertainment'
     - other: '6276241'
       otherScheme: 'BBAN'
@@ -1274,14 +2254,26 @@ users:
           - amount: 295
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Ovo, Urban Utilise, Council '
+            merchantName: 'Ovo, Urban Utilise, Council '
             merchantCategoryCode: '4900'
+            counterparty: 'Ovo, Urban Utilise, Council '
+            remittanceInfo: ''
+            remittanceCat: 'Utilities6'
+          - amount:  295
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Ovo, Urban Utilise, Council '
+            merchantCategoryCode: '4900'
+            counterparty: 'Ovo, Urban Utilise, Council '
+            remittanceInfo: ''
             remittanceCat: 'Utilities6'
           - amount: 295
-            bookingDate: '2020-01-31T08:13:27+10:00'
+            bookingDate: '2020-03-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Ovo, Urban Utilise, Council '
+            merchantName: 'Ovo, Urban Utilise, Council '
             merchantCategoryCode: '4900'
+            counterparty: 'Ovo, Urban Utilise, Council '
+            remittanceInfo: ''
             remittanceCat: 'Utilities6'
     - other: '6276241'
       otherScheme: 'BBAN'
@@ -1293,14 +2285,26 @@ users:
           - amount: 1200
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Body Corp'
+            merchantName: 'Body Corp'
             merchantCategoryCode: '0'
+            counterparty: 'Body Corp'
+            remittanceInfo: ''
             remittanceCat: 'Rates6'
-          - amount: 1200
+          - amount:  1200
             bookingDate: '2020-03-31T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Body Corp'
+            merchantName: 'Body Corp'
             merchantCategoryCode: '0'
+            counterparty: 'Body Corp'
+            remittanceInfo: ''
+            remittanceCat: 'Rates6'
+          - amount: 1200
+            bookingDate: '2020-06-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Body Corp'
+            merchantCategoryCode: '0'
+            counterparty: 'Body Corp'
+            remittanceInfo: ''
             remittanceCat: 'Rates6'
     - other: '6276241'
       otherScheme: 'BBAN'
@@ -1312,14 +2316,26 @@ users:
           - amount: 95
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Frank'
+            merchantName: 'Frank'
             merchantCategoryCode: '8099'
+            counterparty: 'Frank'
+            remittanceInfo: ''
+            remittanceCat: 'Medical6'
+          - amount:  95
+            bookingDate: '2020-01-31T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Frank'
+            merchantCategoryCode: '8099'
+            counterparty: 'Frank'
+            remittanceInfo: ''
             remittanceCat: 'Medical6'
           - amount: 95
-            bookingDate: '2020-01-31T08:13:27+10:00'
+            bookingDate: '2020-03-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Frank'
+            merchantName: 'Frank'
             merchantCategoryCode: '8099'
+            counterparty: 'Frank'
+            remittanceInfo: ''
             remittanceCat: 'Medical6'
     - other: '6276241'
       otherScheme: 'BBAN'
@@ -1328,17 +2344,29 @@ users:
       currency: AUD
       startBalance: 5252.570246
       transactions:
-          - amount: -6200
+          - amount: 6200
             bookingDate: '2020-01-01T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income6'
-          - amount: -6200
+          - amount:  6200
             bookingDate: '2020-01-31T08:13:27+10:00'
-            cdtDbtInd: DBIT
-            counterparty: 'Payroll'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
             merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
+            remittanceCat: 'Income6'
+          - amount: 6200
+            bookingDate: '2020-03-01T08:13:27+10:00'
+            cdtDbtInd: CRDT
+            merchantName: 'Payroll'
+            merchantCategoryCode: '0'
+            counterparty: 'Payroll'
+            remittanceInfo: 'Income'
             remittanceCat: 'Income6'
     - other: '6276241'
       otherScheme: 'BBAN'
@@ -1350,14 +2378,42 @@ users:
           - amount: 55
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling6a'
-          - amount: 55
+          - amount:  55
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Sportsbet'
+            merchantName: 'Sportsbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6a'
+          - amount: 55
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6a'
+          - amount: 55
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6a'
+          - amount: 55
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Sportsbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Sportsbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling6a'
     - other: '6276241'
       otherScheme: 'BBAN'
@@ -1369,14 +2425,42 @@ users:
           - amount: 55
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Colossalbet'
+            merchantName: 'Colossalbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Colossalbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling6b'
-          - amount: 55
+          - amount:  55
             bookingDate: '2020-01-08T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Colossalbet'
+            merchantName: 'Colossalbet'
             merchantCategoryCode: '7995'
+            counterparty: 'Colossalbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6b'
+          - amount: 55
+            bookingDate: '2020-01-15T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Colossalbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Colossalbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6b'
+          - amount: 55
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Colossalbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Colossalbet'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6b'
+          - amount: 55
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Colossalbet'
+            merchantCategoryCode: '7995'
+            counterparty: 'Colossalbet'
+            remittanceInfo: ''
             remittanceCat: 'Gambling6b'
     - other: '6276241'
       otherScheme: 'BBAN'
@@ -1388,12 +2472,40 @@ users:
           - amount: 55
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: DBIT
+            merchantName: 'Neds'
+            merchantCategoryCode: '7995'
             counterparty: 'Neds'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6c'
+          - amount:  55
+            bookingDate: '2020-01-08T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Neds'
             merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
             remittanceCat: 'Gambling6c'
           - amount: 55
-            bookingDate: '2020-01-08T08:13:27+10:00'
+            bookingDate: '2020-01-15T08:13:27+10:00'
             cdtDbtInd: DBIT
-            counterparty: 'Neds'
+            merchantName: 'Neds'
             merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6c'
+          - amount: 55
+            bookingDate: '2020-01-22T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Neds'
+            merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
+            remittanceCat: 'Gambling6c'
+          - amount: 55
+            bookingDate: '2020-01-29T08:13:27+10:00'
+            cdtDbtInd: DBIT
+            merchantName: 'Neds'
+            merchantCategoryCode: '7995'
+            counterparty: 'Neds'
+            remittanceInfo: ''
             remittanceCat: 'Gambling6c'

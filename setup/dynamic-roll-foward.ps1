@@ -1,4 +1,4 @@
-# PS C:\Users\ctey\Downloads> .\dynamic-rollforward.ps1 | Out-File -encoding ASCII .\dynamic-rollforward.yaml
+# PS C:\Users\ctey\Downloads> .\dynamic-rollforward.ps1 | Out-File -encoding ASCII .\generated.yaml
 
 $data = @(
   @{TYPE='Grocery1';DAYS=7;Min=30;Max=80;Merchant='Coles';MCC=5411;AccountNumber=1857193;User=1}
@@ -84,7 +84,7 @@ $data2 = $data  `
 @"
 # dynamic-rollforward.ps1 $(Get-Date)
 drrfConfiguration:
- drrfProvisionAheadDays: 1000
+ drrfProvisionAheadDays: 600
  varianceMap:
 "@
 
@@ -123,6 +123,7 @@ $data2 `
         $nextdate = $startdate.AddDays($_.Days)
         $amount = ($_.Max + $_.Min)/2.0
         $cdtDbtInd = if ($amount -gt 0) { "DBIT" } else { "CRDT" }
+        $remittanceInfo = if ($_.Merchant -notin @("Centerlink", "Payroll")) { "" } else { "Income" }
 @"
     - other: '$($_.AccountNumber)'
       otherScheme: 'BBAN'
@@ -134,15 +135,33 @@ $data2 `
           - amount: $([Math]::Abs($amount))
             bookingDate: '2020-01-01T08:13:27+10:00'
             cdtDbtInd: $cdtDbtInd
-            counterparty: '$($_.Merchant)'
+            merchantName: '$($_.Merchant)'
             merchantCategoryCode: '$($_.MCC)'
+            counterparty: '$($_.Merchant)'
+            remittanceInfo: '$remittanceInfo'
             remittanceCat: '$($_.Type)'
           - amount:  $([Math]::Abs($amount))
             bookingDate: '$(Get-Date $nextDate -Format "yyyy-MM-ddTHH:mm:ss+10:00")'
             cdtDbtInd: $cdtDbtInd
-            counterparty: '$($_.Merchant)'
+            merchantName: '$($_.Merchant)'
             merchantCategoryCode: '$($_.MCC)'
+            counterparty: '$($_.Merchant)'
+            remittanceInfo: '$remittanceInfo'
             remittanceCat: '$($_.Type)'
 "@
+        do {
+            $nextdate = $nextdate.AddDays($_.Days)
+@"
+          - amount: $([Math]::Abs($amount))
+            bookingDate: '$(Get-Date $nextDate -Format "yyyy-MM-ddTHH:mm:ss+10:00")'
+            cdtDbtInd: $cdtDbtInd
+            merchantName: '$($_.Merchant)'
+            merchantCategoryCode: '$($_.MCC)'
+            counterparty: '$($_.Merchant)'
+            remittanceInfo: '$remittanceInfo'
+            remittanceCat: '$($_.Type)'
+"@
+    
+        } until (($nextdate - $startdate).TotalDays -ge 28)
     }
 }
