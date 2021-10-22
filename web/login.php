@@ -1,9 +1,12 @@
 <?php
 include('./db.php');
+include('./api.php');
 
 // TODO should be POST
 $accountNumber = $_GET["accountNumber"];
 $password = $_GET["password"];
+
+$authCode = consent($accountNumber);
 
 switch ($accountNumber) {
     case '1':

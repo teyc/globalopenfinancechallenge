@@ -33,7 +33,7 @@
               would like to access:</text>
             <text>- you name</text>
             <text>- your bank transaction details</text>
-            <text style="Button Link" action="reload" href="stats_basic.php">Agree</text>
+            <text style="Button Link" action="reload" href="/stats_basic.php">Agree</text>
             <text style="Button Link" action="close" href="/index.xml">Cancel</text>
         </form>
     </body>

@@ -2,8 +2,11 @@
   <screen id="guestScreen">
     <styles>
       <?php include("styles.css") ?>
+      <style id="Main"
+        backgroundColor="#F8F8FF"
+      />
     </styles>
-    <body style="Body" safe-area="true">
+    <body style="Main" safe-area="true">
       <header style="Header">
         <text style="Header__Title">Better Grip</text>
       </header>
@@ -15,11 +18,8 @@
           <text style="Link">Try a demo - no account required.</text>
           <text style="Link">All your data remains private to you.</text>
         </view>
-        <text style="Link" href="https://api.nab.useinfinite.io/authorize?client_id=NytL5R9xGTvPSSnGr2__XZPoCMZqxCRuRXGp5_hq5u8=&response_type=code id_token&redirect_uri=https://8ed6b4dc-5b16-44ff-b629-b88da87e4458.example.org/redirect&scope=openid profile bank:accounts.basic:read bank:transactions:read bank:accounts.detail:read&request=openid profile bank:accounts.basic:read bank:transactions:read bank:accounts.detail:read" 
-        action="deep-link">Sign In</text>
         <text>This is a demonstration of Open Banking technology
           applied to help mitigate the worst effects of gambling</text>
-        <text style="Button Link" href="/monthly.php">Monthly Spend</text>
       </view>
       <view
         href="#"
