@@ -40,7 +40,7 @@
               name="password"
               placeholder="password"
               secure-text="true" />
-            <text style="Button Link" target="login_container" action="reload" verb="post" href="/web/login.php">Login 1</text>
+            <text style="Button Link" target="login_container" action="reload" verb="post" href="/web/login.php">Login</text>
             <text style="Button Link" action="close">Cancel</text>
           </form>
     </body>
