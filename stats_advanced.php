@@ -44,7 +44,9 @@ $chartdataAttr = "[". implode(",", array_map(function($v) {
           $spend = $values['spend'];
           $win   = $values['win'];
           ?>
-          <text><?= $month?></text> <text> <?php echo("Spent: $$spend")?> <?php echo ("Won: $$win") ?></text><text></text>
+	  <text><?= $month?></text>
+          <text> <?php echo("Spent: $$spend")?> <?php echo ("Won: $$win") ?></text>
+          <text></text>
         <?php endforeach; ?>
         <ppp:StackedBarChart 
           title="Monthly spend vs Winnings"
@@ -52,8 +54,6 @@ $chartdataAttr = "[". implode(",", array_map(function($v) {
           legend="[]"
           bar-colors="[&quot;#ff3333aa&quot;, &quot;#00ff00bb&quot; ]"
           chartdata="<?= $chartdataAttr ?>" />
-        
-        <?php endforeach;?> -->
       </view>
       <view
         href="#"
