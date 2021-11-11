@@ -30,6 +30,10 @@ Chui Tey, Callum Reynolds, Murray Thorpe
 (Not in picture - Rance Wu)
 
 ## Pitch presentations
+
+[Video - Pitch](@docs/PingPongPayPitch.mp4)
+[Video - Demo](@docs/PingPongPayDemo.mp4)
+
 <video width="300">
     <source src="@docs/PingPongPayPitch.mp4" />
 </video>
@@ -60,15 +64,14 @@ TODO
 
 <img src="@docs/Backdrop.png" width="300" alt="Backdrop for videos" />
 
-TODO: NAB openbanking sandbox
+## Open Banking Sandbox
 
+[Open Banking Sandbox screenshots](@docs/openbanking/sandbox.md)
 ## Source Code
 
 See [Development notes](DEVELOPMENT.md)
 
 ## TODO
-
-- NAB open banking sandbox
 
 - Actual product screenshots
 
